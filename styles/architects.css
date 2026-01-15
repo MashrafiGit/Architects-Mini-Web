@@ -1,9 +1,24 @@
+/* =========================
+   1. FONT IMPORT
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* =========================
+   2. BASE STYLES
+========================= */
 body {
     margin: 0;
 }
 
+p {
+    font-size: 17px;
+}
+
+
+/* =========================
+   3. FONT FAMILY
+========================= */
 .work-sans-font {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
@@ -11,7 +26,10 @@ body {
     font-style: normal;
 }
 
-/* shared styles */
+
+/* =========================
+   4. SHARED / UTILITY CLASSES
+========================= */
 .display-flex {
     display: flex;
     align-items: center;
@@ -21,14 +39,16 @@ body {
     color: #FF900E;
 }
 
-/* dark 02 */
 .text-gray {
     color: #424242;
 }
 
-/* dark03 */
 .text-light-gray {
     color: #727272;
+}
+
+.text-dark-gray {
+    color: #5a5757;
 }
 
 .bg-light {
@@ -38,51 +58,62 @@ body {
 .btn-primary {
     background-color: #FF900E;
     color: white;
-    padding: 20px 25px;
-    font-size: 1.25rem;
-    font-weight: 600;
+    padding: 15px 25px;
+    font-size: 1.15rem;
+    font-weight: 500;
     border-radius: 8px;
     border: none;
+    margin-top: 7px;
 }
 
+
+/* =========================
+   5. GLOBAL LAYOUT
+========================= */
 main {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
-main>section {
+main > section {
     margin-top: 80px;
 }
 
-/* navbar related styles */
+.navbar,
+.banner {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   6. NAVBAR
+========================= */
 .navbar {
     justify-content: space-between;
     align-items: center;
 }
 
 .brand {
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
 .nav-item {
     list-style: none;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .nav-link {
     text-decoration: none;
     font-weight: 500;
-    font-size: x-large;
+    font-size: 19px;
 }
 
-.navbar,
-.banner {
-    max-width: 1440px;
-    margin: 0 auto;
-}
 
-/* banner related styles */
+/* =========================
+   7. BANNER
+========================= */
 .banner-content {
     max-width: 850px;
     margin: 0 auto;
@@ -91,15 +122,25 @@ main>section {
 }
 
 .banner-title {
-    font-weight: 700;
-    font-size: 4rem;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 5px;
 }
 
 .banner-image {
     width: 100%;
 }
 
-/* team and feature related styles */
+
+/* =========================
+   8. TEAM & FEATURES (TOP)
+========================= */
 .teams {
     align-items: center;
 }
@@ -119,7 +160,10 @@ main>section {
     font-weight: 500;
 }
 
-/* features section related styles */
+
+/* =========================
+   9. FEATURES SECTION
+========================= */
 .features {
     gap: 140px;
 }
@@ -138,22 +182,22 @@ main>section {
 }
 
 .feature-card .feature-title {
-    font-weight: 600;
-    font-size: 1.25rem;
+    font-weight: 500;
+    font-size: 1.35rem;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 #experience-badge {
-    padding: 35px 42px;
-    font-size: 1.5rem;
-    font-weight: 500;
+    padding: 30px 35px;
+    font-size: 1.4rem;
+    font-weight: 400;
     margin-left: -100px;
     margin-top: -100px;
 }
 
 #experience-year {
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 600;
 }
 
@@ -161,14 +205,17 @@ main>section {
     width: 100%;
 }
 
-/* some facts related styles */
+
+/* =========================
+   10. FACTS
+========================= */
 .facts-section {
     margin: 50px 50px;
 }
 
 .section-title {
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 2.4rem;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -180,8 +227,8 @@ main>section {
 
 .fact-card {
     border: 1px solid #FF900E;
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
     border-radius: 8px;
     text-align: center;
     align-items: center;
@@ -189,7 +236,7 @@ main>section {
 }
 
 .fact-number {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
@@ -197,23 +244,27 @@ main>section {
 
 .fact-name {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .fact-description {
     max-width: 540px;
 }
 
-/* sponsor related styles */
+
+/* =========================
+   11. SPONSORS
+========================= */
 .sponsor-title {
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin: 0;
 }
 
 .sponsor-info {
-    max-width: 540px;
+    max-width: 550px;
     margin: 50px auto;
     text-align: center;
 }
@@ -224,7 +275,10 @@ main>section {
     margin: 0 50px;
 }
 
-/* footer related style */
+
+/* =========================
+   12. FOOTER
+========================= */
 .footer-container {
     border-radius: 2px;
     background: #FFF4E7;
@@ -236,97 +290,189 @@ main>section {
     color: #424242;
     text-align: center;
     font-family: "Work Sans";
-    font-size: 20px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-/* responsive media query */
+
+/* =========================
+   13. MOBILE (max-width: 576px)
+========================= */
 @media screen and (max-width: 576px) {
 
-    .navbar,
-    .nav-links,
-    .features,
+    .brand {
+        font-size: 1.7rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .feature-description {
+        margin-inline: 10px;
+    }
+
+    .facts-section {
+        margin: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .sponsor-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .nav-item {
+        margin-right: 0;
+    }
+
+    .banner-title {
+        font-size: rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
     .teams {
         flex-direction: column;
     }
 
-    .team-img-container,
-    .facts-container,
-    .sponsor-companies {
-        flex-direction: column;
-    }
-
-    .facts-container {
-        /* justify-items: center; */
-        align-items: center;
-        gap: 24px;
-    }
-
-    .sponsor-companies {
-        align-items: center;
-        gap: 50px;
-
-        img {
-            width: 60%;
-            height: auto;
-        }
+    .section-title {
+        font-size: 2em;
     }
 
     .team-img-container {
-        margin-bottom: 20px;
+        grid-template-columns: 1fr;
     }
 
     .our-features {
-        margin-left: 20px;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 40px;
     }
 
     #experience-badge {
-        position: relative;
-        left: 44%;
+        position: static;
+        margin: 20px auto 0 !important;
+        padding: 18px 25px;
+        display: block;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 400;
     }
 
-    .facts-section {
-        margin-top: 25px;
+    #experience-year{
+        font-size: 25px;
+        font-weight: 600;
     }
 
-    main>section {
-        margin-top: 20px;
+    .facts-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
-    .features {
-        gap: 40px;
-        margin-top: 40px;
+    .fact-card {
+        width: 100%;
+        max-width: 280px;
+        height: 200px;
+    }
+
+    .sponsor-companies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        align-items: center;
+
+        img{
+            max-width: 40%;
+        }
+    }
+
+    .footer-container {
+        margin: 40px 20px;
+    }
+
+    .footer-description {
+        font-size: 1rem;
     }
 }
 
-/* medium size device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
 
-    .teams,
-    .features {
+/* =========================
+   14. TABLET (max-width: 992px)
+========================= */
+@media screen and (max-width: 992px) {
+
+    .brand {
+        margin-left: 15px;
+    }
+
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .teams {
         flex-direction: column;
     }
 
     .our-features {
-        margin: 50px auto 0;
-    }
-
-    .sponsor-companies,
-    .facts-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-        justify-items: center;
-    }
-
-    #experience-badge {
-        position: relative;
-        left: 44%;
+        margin-left: 0;
+        margin-top: 40px;
     }
 
     .features {
-        gap: 40px;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #experience-badge {
+        position: static;
+        margin: 20px auto 0 !important;
+        padding: 20px 25px;
+        display: block;
+        text-align: center;
+    }
+
+    .facts-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .fact-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sponsor-companies {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 }

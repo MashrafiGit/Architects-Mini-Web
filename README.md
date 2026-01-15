@@ -62,7 +62,7 @@ g3-architects/<br/>
 - Clone or download the repository  
 - Open `index.html` in any modern web browser  
 or  
-- Visit the live demo (if deployed)
+- Visit the live demo using the link above
 
 ---
 
